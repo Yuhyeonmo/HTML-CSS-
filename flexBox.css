@@ -1,0 +1,13 @@
+div{
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+}
+body{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: stretch;
+}
+#second {
+    background-color: seagreen;
+}
