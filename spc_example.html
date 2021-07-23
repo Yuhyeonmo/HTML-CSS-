@@ -1,0 +1,38 @@
+<style>
+    /* p:first-child{
+        color:lime;
+        background-color: black;
+        padding: 5px;
+    }
+    p:last-child{
+        color: lime;
+        background-color: gray;
+        padding: 5px;
+    } */
+    p:nth-child(2n+1){
+        color : red;
+    }
+    p:nth-child(2n){
+        color : blue;
+    }
+    span:only-of-type{
+        color : yellowgreen;
+    }
+</style>
+<body>
+    <div>
+        <span>
+        <p>:first-child입니다.(1)</p>
+        <p>2번째 P태그</p>
+        <p>3번째 P태그(3)</p>
+        <p>4번째 P태그(4)</p>
+    </span>
+    </div>
+   <div>    
+       <span> 
+       <h2>p 태그가 아닙니다. only type</h2>
+       <p>마지막</p>
+       </span>
+   </div>
+
+</body>

@@ -1,0 +1,34 @@
+<style>
+    button:active {
+      color: lime;
+    }
+    a:visited {
+        color : red;
+    }
+    input:disabled{
+        background-color:  coral;
+    }
+    a:hover{
+        color:black;
+    }
+    input:focus{
+        color:red;
+    }
+    .red-input:focus{
+        background: wheat;
+        color:red;
+    }
+    .blue-input:focus{
+        background : wheat;
+        color: blue;
+    }
+  </style>
+  <body>
+    <div><button>클릭하세요</button></div>
+    <div><a href="https://www.google.com/">google web</a></div>
+    <input type="text" placeholder="name" disabled>
+
+    <input class="red-input" value="클릭 시 빨갛게 됩니다"/>
+    <input class="blue-input" value = "클릭 시 파랗게 됩니다."/>
+  </body>
+  
