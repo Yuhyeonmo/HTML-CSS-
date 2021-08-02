@@ -1,0 +1,40 @@
+html,body {
+    height: 100%;
+}
+
+body {
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 310px;
+    height: 50px;
+    background-color: red;
+    border-radius: 10px;
+    border-bottom: 10px;
+}
+main{
+    display: flex;
+}
+nav {
+    width: 100px;
+    height: 200px;
+    background-color: aqua;
+    border-radius: 1px;
+    margin-right: 10px;
+}
+article {
+    width : 200px;
+    height: 200px;
+    background-color: green;
+    border-radius: 10px;
+}
+footer {
+    width: 310px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: blue;
+    
+}
