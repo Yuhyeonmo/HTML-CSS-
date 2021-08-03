@@ -53,3 +53,56 @@ display : 속성을 통해 바꿔줄 수 있다.
 - 구조적 가상 클래스
 구조적 가상 클래스는 CSS 에서 id, class 등의 선택자를 사용하지 않고 요소를 선택할 수 있습니다.
 first-child, last-child, nth-of-type, only-of-type
+
+## DAY 4 ~ 5
+
+1. Box Layout - Header main (nav, article) footer
+- display : flex , justify-content, align-items 는 정렬 대상의 부모
+- align-item 부모의 높이가 정해졌는 지 확인.
+
+2. 사용자 지정 속성
+var(사용자지정속성);
+```HTML
+<style>
+    :root {
+        --title-color : red;
+    }
+    h1 {
+        color : var(--title-color);
+    }
+</style>
+<body>
+    <h1>test</h1>
+</body>
+```
+
+before, after 는 가상선택자를 사용할 때 반드시 content를 써야한다.
+none
+string 
+img
+
+```HTML
+<style>
+    .box {
+        width : 400px;
+        height : 100px;
+        background-color : blueviolet;
+        position : relative;
+    }
+
+    .box::after {
+        content : "";
+        width : 400px;
+        height : 100px;
+        top : 100px;
+        background-color : brown;
+        position : absolute;
+    }
+</style>
+<body>
+    <div class="box"></div>
+</body>
+```
+
+체크박스 선택자
+체크박스(input type="checkbox") ::checked
