@@ -1,0 +1,66 @@
+:root{
+    --body-bg : crimson;
+
+    --hambuger-bg : crimson;
+}
+html,body {
+    height : 100%;
+}
+body {
+    height : 100%;
+    background-color: var(--body-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* inline block 을 통해 inline의 성질 갖되, 높이와 너비를 지정가능 */
+.hambuger-container {
+    display: inline-block;
+    position: relative;
+    width:  100px;
+    height:  100px;
+    background-color: var(--hambuger-bg);
+}
+.hambuger-title {
+    color : white;
+    font-size:  18px;
+    padding-bottom: 10px;
+}
+.hambuger, .hambuger::after , .hambuger::before {
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    background-color: white;
+    transition: 0.5s;
+    
+}
+.hambuger {
+    top : 50%;
+}
+.hambuger::after , .hambuger::before{
+    content:  "";
+    
+}
+.hambuger::after{
+    top : 30px;
+}
+.hambuger::before{
+    top : -30px;
+}
+
+.toggle:checked ~ .hambuger::after{
+    top: 0;
+    transform: rotate(225deg);
+}
+.toggle:checked ~ .hambuger::before {
+    top: 0;
+    transform: rotate(135deg);
+}
+
+.toggle:checked ~ .hambuger {
+    background : var(--hambuger-bg);
+}
+.toggle {
+    opacity: 0;
+}
